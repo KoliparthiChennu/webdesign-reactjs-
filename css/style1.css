@@ -1,0 +1,32 @@
+.parent{
+    display : flex; 
+}
+img{
+    width:180px;
+    /* margin: 5px 0px 0px 30px; */
+}
+.pd{
+    flex : 1;
+}
+.od{ 
+    flex : 3;
+}
+
+table,td,th,tr{
+    border : 2px solid black;
+    border-collapse: collapse;
+}
+li{
+    font-size: 20px;
+}
+@media screen and (max-width: 425px) {
+    .parent{
+        flex-direction: column;
+    }
+    .pd{
+        background-color: #c45e45;
+    }
+    .od{
+        background-color: #ddd;
+    }
+}
