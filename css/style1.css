@@ -1,32 +1,30 @@
 .parent{
     display : flex; 
 }
-img{
-    width:180px;
-    /* margin: 5px 0px 0px 30px; */
-}
 .pd{
-    flex : 1;
+    border: 2px solid #000000;
+    padding: 2px;
+    margin: 2px;
 }
-.od{ 
-    flex : 3;
+.od{
+    border: 2px solid #000000;
+    padding: 2px;
+    margin: 2px;
 }
-
-table,td,th,tr{
-    border : 2px solid black;
+table,td,tr,th{
+    border: 2px solid #000000;
     border-collapse: collapse;
 }
-li{
-    font-size: 20px;
-}
-@media screen and (max-width: 425px) {
+
+@media screen and (max-width:425px){
     .parent{
         flex-direction: column;
+        flex-wrap: wrap;
     }
     .pd{
-        background-color: #c45e45;
+        background-color: grey;
     }
     .od{
-        background-color: #ddd;
+        background-color:yellow;
     }
 }
